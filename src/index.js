@@ -11,7 +11,6 @@ ReactDOM.render(
     <Card />,
     <Card />,
     <Card />,
-    <Card />,
   </div>,
   document.getElementById("root")
 );
