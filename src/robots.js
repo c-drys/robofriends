@@ -1,62 +1,62 @@
 export const robots = [
   {
     id: 1,
-    name: 'Leanne Graham',
-    username: 'Bret',
-    email: 'Sincere@april.biz'
+    name: 'Chris Drys',
+    username: 'chrise.d',
+    email: 'chrise.d@gmmal.ca'
   },
   {
     id: 2,
-    name: 'Ervin Howell',
-    username: 'Antonette',
-    email: 'Shanna@melissa.tv'
+    name: 'Zach Scull',
+    username: 'scullerator',
+    email: 'thonscull@hey.tv'
   },
   {
     id: 3,
-    name: 'Clementine Bauch',
-    username: 'Samantha',
-    email: 'Nathan@yesenia.net'
+    name: 'Hilda the K',
+    username: 'Khajehamiri',
+    email: 'hk162@serverless.ca'
   },
   {
     id: 4,
-    name: 'Patricia Lebsack',
-    username: 'Karianne',
-    email: 'Julianne.OConner@kory.org'
+    name: 'Nick Hosack',
+    username: 'itsNicky',
+    email: 'thehos@itsnicky.org'
   },
   {
     id: 5,
-    name: 'Chelsey Dietrich',
-    username: 'Kamren',
-    email: 'Lucio_Hettinger@annie.ca'
+    name: 'Taylor W',
+    username: 'westeros',
+    email: 'westisbest@tw.ca'
   },
   {
     id: 6,
-    name: 'Mrs. Dennis Schulist',
-    username: 'Leopoldo_Corkery',
-    email: 'Karley_Dach@jasper.info'
+    name: 'Mr Allan',
+    username: 'coffeelover',
+    email: 'alpack@theonly.com'
   },
   {
     id: 7,
-    name: 'Kurtis Weissnat',
-    username: 'Elwyn.Skiles',
-    email: 'Telly.Hoeger@billy.biz'
+    name: 'liv ',
+    username: 'liv.a.little',
+    email: 'liv123@outthere.com'
   },
   {
     id: 8,
-    name: 'Nicholas Runolfsdottir V',
-    username: 'Maxime_Nienow',
-    email: 'Sherwood@rosamond.me'
+    name: 'Rebecca Reyes',
+    username: 'ReyesUp',
+    email: 'reyes.r@outlook.com.au
   },
   {
     id: 9,
-    name: 'Glenna Reichert',
-    username: 'Delphine',
-    email: 'Chaim_McDermott@dana.io'
+    name: 'Anna Fur',
+    username: 'Anna4',
+    email: 'anna@macncheese.io'
   },
   {
     id: 10,
-    name: 'Clementina DuBuque',
-    username: 'Moriah.Stanton',
-    email: 'Rey.Padberg@karina.biz'
+    name: 'Marc Logs',
+    username: 'loggit',
+    email: 'marc.love@nopets.biz'
   }
 ];
