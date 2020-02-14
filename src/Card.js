@@ -3,7 +3,7 @@ import robots from "./robots";
 
 const Card = ({ name, email, id }) => {
   return (
-    <div className="tc bg-light-purple dib br3 pa3 ma2 grow bw2 shadow-5">
+    <div className="tc bg-gold dib br3 pa3 ma2 grow bw2 shadow-5">
       {/* // styling using tachyons  */}
       <img alt="robots" src={`https://robohash.org/${id}?200x200`} />
       {/* template strings used to randomise robot id image  */}
