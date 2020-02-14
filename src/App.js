@@ -8,9 +8,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      robots: robots,
+      robots: [],
       searchfield: ""
     };
+    console.log("constructor");
+  }
+
+  componentDidMount() {
+    this.setState({ robots: robots });
+    console.log("componentDidMount");
   }
 
   onSearchChange = event => {
@@ -23,7 +29,7 @@ class App extends Component {
         .toLowerCase()
         .includes(this.state.searchfield.toLowerCase());
     });
-    console.log(filteredRobots);
+    console.log("render");
 
     return (
       <div className="tc">
