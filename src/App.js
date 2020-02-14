@@ -11,12 +11,12 @@ class App extends Component {
       robots: [],
       searchfield: ""
     };
-    console.log("constructor");
   }
 
   componentDidMount() {
-    this.setState({ robots: robots });
-    console.log("componentDidMount");
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => response.json())
+      .then(users => this.setState({ robots: users }));
   }
 
   onSearchChange = event => {
@@ -29,7 +29,6 @@ class App extends Component {
         .toLowerCase()
         .includes(this.state.searchfield.toLowerCase());
     });
-    console.log("render");
 
     return (
       <div className="tc">
