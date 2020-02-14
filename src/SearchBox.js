@@ -8,7 +8,6 @@ const SearchBox = () => {
         type="search"
         placeholder="search robots"
       />
-      ;
     </div>
   );
 };
