@@ -2,9 +2,11 @@ import React from "react";
 import Card from "./Card";
 
 const CardList = ({ robots }) => {
-  if (true) {
-    throw new Error("NOOOOOOOO");
-  }
+  // if (true) {
+  //   throw new Error("NOOOOOOOO");
+  // }
+  // Error Boundary useful for production
+
   return (
     <div>
       {robots.map((user, i) => {
