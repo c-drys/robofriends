@@ -1,6 +1,6 @@
-import { CHANGE_SEARCH_FIELD } from "./constants";
+import { CHANGE_SEARCHFIELD } from "./constants";
 
-const initialState = {
+const initialStateSearch = {
   searchField: ""
 };
 
