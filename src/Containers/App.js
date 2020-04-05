@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import CardList from "../Components/CardList";
 import SearchBox from "../Components/SearchBox";
 import Scroll from "../Components/Scroll";
 import ErrorBoundary from "../Components/ErrorBoundary";
+import { setSearchField } from "../actions";
 import "./App.css";
 
 class App extends Component {
@@ -47,4 +49,5 @@ class App extends Component {
   }
 }
 
-export default App;
+// connect is a higher order function | will run return another function
+export default connect(mapStateToProps, mapDispatchToProps)(App);
