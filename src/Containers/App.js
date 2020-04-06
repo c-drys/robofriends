@@ -9,7 +9,10 @@ import "./App.css";
 
 const mapStateToProps = state => {
   return {
-    searchField: state.searchRobots.searchField
+    searchField: state.searchRobots.searchField,
+    isPending: state.requestRobots.isPending,
+    robots: state.requestRobots.Robots,
+    error: state.requestRobots.error
   };
 };
 
