@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+
 import CardList from "../Components/CardList";
 import SearchBox from "../Components/SearchBox";
 import Scroll from "../Components/Scroll";
 import ErrorBoundary from "../Components/ErrorBoundary";
+
 import { setSearchField, requestRobots } from "../actions";
+
 import "./App.css";
 
 const mapStateToProps = state => {
@@ -24,25 +27,16 @@ const mapDispatchToProps = dispatch => {
 };
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      robots: []
-      // searchfield: ""
-    };
-  }
-
   componentDidMount() {
-    this.props.onRequestRobots;
+    this.props.onRequestRobots();
   }
 
   render() {
-    const { robots } = this.state;
-    const { searchField, onSearchChange } = this.props;
+    const { searchField, onSearchChange, robots, isPending } = this.props;
     const filteredRobots = robots.filter(robots => {
       return robots.name.toLowerCase().includes(searchField.toLowerCase());
     });
-    return !robots.length ? (
+    return isPending ? (
       <h1>Loading</h1>
     ) : (
       <div className="tc">
