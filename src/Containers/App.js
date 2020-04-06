@@ -4,7 +4,7 @@ import CardList from "../Components/CardList";
 import SearchBox from "../Components/SearchBox";
 import Scroll from "../Components/Scroll";
 import ErrorBoundary from "../Components/ErrorBoundary";
-import { setSearchField } from "../actions";
+import { setSearchField, requestRobots } from "../actions";
 import "./App.css";
 
 const mapStateToProps = state => {
@@ -18,7 +18,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onSearchChange: event => dispatch(setSearchField(event.target.value))
+    onSearchChange: event => dispatch(setSearchField(event.target.value)),
+    onRequestRobots: () => dispatch(requestRobots())
   };
 };
 
